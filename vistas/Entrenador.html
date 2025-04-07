@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrenador y Pokemones</title>
+  <link rel="stylesheet" href="../css/Entrenador.css">
+</head>
+<body>
+
+  <!-- Sección de Entrenador -->
+  <div class="seccion">
+    <h2>Entrenador</h2>
+    <div class="opciones-entrenador">
+      <div onclick="seleccionarEntrenador(this)" class="entrenador-opcion">
+        <img class="imagen-entrenador" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/trainers/ash.png" alt="Entrenador Hombre">
+        <div class="descripcion">Hombre</div>
+      </div>
+      <div onclick="seleccionarEntrenador(this)" class="entrenador-opcion">
+        <img class="imagen-entrenador" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/trainers/leaf.png" alt="Entrenadora Mujer">
+        <div class="descripcion">Mujer</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Pokemones -->
+  <div class="seccion">
+    <h2>Pokemones</h2>
+    <div class="contenedor-pokemones">
+
+      <!-- Pikachu -->
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu">
+        <div class="descripcion">Pikachu</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('pikachu')">Detalles</button>
+        <div id="pikachu" class="estadisticas">
+          ⚡ Ataque: 55<br> 🛡 Defensa: 40<br> 💨 Velocidad: 90<br> ❤️ HP: 35
+        </div>
+      </div>
+
+      <!-- Charmander -->
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
+        <div class="descripcion">Charmander</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('charmander')">Detalles</button>
+        <div id="charmander" class="estadisticas">
+          🔥 Ataque: 52<br> 🛡 Defensa: 43<br> 💨 Velocidad: 65<br> ❤️ HP: 39
+        </div>
+      </div>
+
+      <!-- Bulbasaur -->
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+        <div class="descripcion">Bulbasaur</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('bulbasaur')">Detalles</button>
+        <div id="bulbasaur" class="estadisticas">
+          🍃 Ataque: 49<br> 🛡 Defensa: 49<br> 💨 Velocidad: 45<br> ❤️ HP: 45
+        </div>
+      </div>
+
+      <!-- Squirtle -->
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
+        <div class="descripcion">Squirtle</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('squirtle')">Detalles</button>
+        <div id="squirtle" class="estadisticas">
+          💧 Ataque: 48<br> 🛡 Defensa: 65<br> 💨 Velocidad: 43<br> ❤️ HP: 44
+        </div>
+      </div>
+
+      <!-- Eevee -->
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="" alt="Eevee">
+        <div class="descripcion">Eevee</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('eevee')">Detalles</button>
+        <div id="eevee" class="estadisticas">
+          ✨ Ataque: 55<br> 🛡 Defensa: 50<br> 💨 Velocidad: 55<br> ❤️ HP: 55
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../js/Entrenador.js"></script>
+</body>
+</html>
